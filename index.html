@@ -41,24 +41,28 @@ body {
     margin: 0 0 4px 0;
 }
 
+/* Vypnutie podčiarknutia globálne */
+a {
+    text-decoration: none;
+    word-break: break-word;
+    transition: opacity 0.2s ease;
+}
+
+a:hover {
+    text-decoration: none;
+    opacity: 0.75;
+}
+
 /* Univerzitná modrá */
 .uniza-link {
     color: #0057B8;
-    text-decoration: none;
     font-weight: 600;
-}
-.uniza-link:hover {
-    text-decoration: underline;
 }
 
 /* Fakulta zelená */
 .fbi-link {
     color: #78BE20;
-    text-decoration: none;
     font-weight: 600;
-}
-.fbi-link:hover {
-    text-decoration: underline;
 }
 
 .divider {
@@ -79,10 +83,6 @@ body {
 }
 p { 
     margin: 8px 0; 
-}
-
-a {
-    word-break: break-word;
 }
 
 .orcid {
@@ -130,13 +130,13 @@ a {
     <div class="position">Assistant Professor</div>
 
     <div class="institution">
-        <a class="uniza-link" href="https://www.uniza.sk/" target="_blank" rel="noopener noreferrer">
+        <a class="uniza-link" href="https://www.uniza.sk/" target="_blank">
         University of Žilina
         </a>
     </div>
 
     <div class="institution">
-        <a class="fbi-link" href="https://fbi.uniza.sk/" target="_blank" rel="noopener noreferrer">
+        <a class="fbi-link" href="https://fbi.uniza.sk/" target="_blank">
         Faculty of Security Engineering
         </a>
     </div>
