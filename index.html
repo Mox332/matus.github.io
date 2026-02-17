@@ -40,13 +40,27 @@ body {
     font-size: 15px;
     margin: 0 0 4px 0;
 }
-.institution a {
-    color: #003366;
+
+/* Univerzitná modrá */
+.uniza-link {
+    color: #0057B8;
     text-decoration: none;
+    font-weight: 600;
 }
-.institution a:hover {
+.uniza-link:hover {
     text-decoration: underline;
 }
+
+/* Fakulta zelená */
+.fbi-link {
+    color: #78BE20;
+    text-decoration: none;
+    font-weight: 600;
+}
+.fbi-link:hover {
+    text-decoration: underline;
+}
+
 .divider {
     border-top: 1px solid #dddddd;
     margin: 18px 0;
@@ -68,13 +82,9 @@ p {
 }
 
 a {
-    color: #003366;
-    text-decoration: none;
     word-break: break-word;
 }
-a:hover {
-    text-decoration: underline;
-}
+
 .orcid {
     color: #a6ce39;
     font-weight: bold;
@@ -96,7 +106,6 @@ a:hover {
     margin: 10px auto 0 auto;
 }
 
-/* Mobile fine tuning */
 @media (max-width: 480px) {
     body { padding: 12px; }
     .card { padding: 22px; border-radius: 12px; }
@@ -108,7 +117,6 @@ a:hover {
     .qr-image { width: 160px; }
 }
 
-/* Larger screens */
 @media (min-width: 1024px) {
     body { padding: 24px; }
     .card { max-width: 520px; }
@@ -122,13 +130,13 @@ a:hover {
     <div class="position">Assistant Professor</div>
 
     <div class="institution">
-        <a href="https://www.uniza.sk/" target="_blank" rel="noopener noreferrer">
+        <a class="uniza-link" href="https://www.uniza.sk/" target="_blank" rel="noopener noreferrer">
         University of Žilina
         </a>
     </div>
 
     <div class="institution">
-        <a href="https://fbi.uniza.sk/" target="_blank" rel="noopener noreferrer">
+        <a class="fbi-link" href="https://fbi.uniza.sk/" target="_blank" rel="noopener noreferrer">
         Faculty of Security Engineering
         </a>
     </div>
@@ -156,12 +164,12 @@ a:hover {
     <div class="section">
         <div class="section-title">Academic Profiles</div>
         <p><span class="label">ORCID:</span> 
-            <a class="orcid" href="https://orcid.org/0009-0007-0599-7056" target="_blank" rel="noopener noreferrer">
+            <a class="orcid" href="https://orcid.org/0009-0007-0599-7056" target="_blank">
             0009-0007-0599-7056
             </a>
         </p>
         <p><span class="label">ResearchGate:</span> 
-            <a class="researchgate" href="https://www.researchgate.net/profile/Matus-Madlenak" target="_blank" rel="noopener noreferrer">
+            <a class="researchgate" href="https://www.researchgate.net/profile/Matus-Madlenak" target="_blank">
             Research Profile
             </a>
         </p>
