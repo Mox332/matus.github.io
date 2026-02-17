@@ -84,6 +84,18 @@ a:hover {
     font-weight: bold;
 }
 
+/* QR block */
+.qr-block {
+    text-align: center;
+}
+.qr-image {
+    width: 180px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto 0 auto;
+}
+
 /* Mobile fine tuning */
 @media (max-width: 480px) {
     body { padding: 12px; }
@@ -93,6 +105,7 @@ a:hover {
     .institution { font-size: 14px; }
     .section, .section-title { font-size: 13px; }
     .divider { margin: 16px 0; }
+    .qr-image { width: 160px; }
 }
 
 /* Larger screens */
@@ -152,6 +165,13 @@ a:hover {
             Research Profile
             </a>
         </p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section qr-block">
+        <div class="section-title">QR Code</div>
+        <img class="qr-image" src="qr-code.png" alt="QR Code">
     </div>
 
 </div>
