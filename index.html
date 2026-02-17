@@ -13,7 +13,135 @@ body {
     height: 100vh; 
     margin: 0;
 }
+.card { <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Digital Business Card</title>
+<style>
+body { 
+    font-family: Arial, sans-serif; 
+    background-color: #f4f6f8;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0;
+}
 .card { 
+    background: #ffffff; 
+    padding: 35px; 
+    width: 420px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-top: 5px solid #003366;
+    text-align: left;
+}
+.name {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.position {
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+.institution {
+    font-size: 15px;
+    margin-bottom: 2px;
+}
+.institution a {
+    color: #003366;
+    text-decoration: none;
+}
+.institution a:hover {
+    text-decoration: underline;
+}
+.divider {
+    border-top: 1px solid #dddddd;
+    margin: 20px 0;
+}
+.section {
+    font-size: 14px;
+}
+.section-title {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #003366;
+}
+.label {
+    font-weight: bold;
+}
+a {
+    color: #003366;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.orcid {
+    color: #a6ce39;
+    font-weight: bold;
+}
+.researchgate {
+    color: #00ccbb;
+    font-weight: bold;
+}
+</style>
+</head>
+<body>
+<div class="card">
+
+    <div class="name">Ing. Matúš Madleňák</div>
+    <div class="position">Assistant Professor</div>
+
+    <div class="institution">
+        <a href="https://www.uniza.sk/" target="_blank">
+        University of Žilina
+        </a>
+    </div>
+
+    <div class="institution">
+        <a href="https://fbi.uniza.sk/" target="_blank">
+        Faculty of Security Engineering
+        </a>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+        <p><span class="label">Areas of Expertise:</span> Cybersecurity, Computer Networks</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+        <p><span class="label">Email:</span> matus.madlenak@uniza.sk</p>
+        <p><span class="label">Phone:</span> +421 949 225 396</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+        <div class="section-title">Academic Profiles</div>
+        <p><span class="label">ORCID:</span> 
+            <a class="orcid" href="https://orcid.org/0009-0007-0599-7056" target="_blank">
+            0009-0007-0599-7056
+            </a>
+        </p>
+        <p><span class="label">ResearchGate:</span> 
+            <a class="researchgate" href="https://www.researchgate.net/profile/Matus-Madlenak?ev=hdr_xprf" target="_blank">
+            Research Profile
+            </a>
+        </p>
+    </div>
+
+</div>
+</body>
+</html>
+
     background: #ffffff; 
     padding: 35px; 
     width: 420px; 
